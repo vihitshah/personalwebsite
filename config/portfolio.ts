@@ -16,12 +16,12 @@ import { SECTIONS, LABELS } from './design';
 // ── 1. Your info — fill this in first ────────────────────────────────
 // Every URL, page title, and footer link is built from these values.
 export const ME = {
-  firstName: 'Your',
-  lastName: 'Name',
+  firstName: 'Vihit',
+  lastName: 'Shah',
   role: 'Software Engineer',  // shown in hero and page title
-  email: 'you@example.com',
-  github: 'yourusername',       // GitHub username only — no URL
-  linkedin: 'yourusername',       // LinkedIn username only — no URL
+  email: 'vihitshah@g.ucla.edu',
+  github: 'vihitshah',       // GitHub username only — no URL
+  linkedin: 'vihit-shah-cs',       // LinkedIn username only — no URL
   resumePath: '/resume.pdf',        // path under public/ — see README.md
 };
 
