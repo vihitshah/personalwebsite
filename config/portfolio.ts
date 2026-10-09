@@ -18,7 +18,7 @@ import { SECTIONS, LABELS } from './design';
 export const ME = {
   firstName: 'Vihit',
   lastName: 'Shah',
-  role: 'Software Engineer',  // shown in hero and page title
+  role: 'CS Student at UCLA',  // shown in hero and page title
   email: 'vihitshah@g.ucla.edu',
   github: 'vihitshah',       // GitHub username only — no URL
   linkedin: 'vihit-shah-cs',       // LinkedIn username only — no URL
