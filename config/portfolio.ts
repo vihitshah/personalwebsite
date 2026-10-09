@@ -132,7 +132,7 @@ export const EXPERIENCE: ExperienceEntry[] = [
     bullets: [
       "Member of the LLM Inference Track in the BSE Fellowship. More updates soon to come!"
     ],
-    tech: ['LLMs', 'Node.js', 'Homebrew', 'Git'],
+    tech: ['LLMs', 'Node.js', 'Git'],
   },
   {
     company: 'NEXUS (CS/AI & Physics Society)',
