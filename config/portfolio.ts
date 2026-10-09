@@ -69,11 +69,11 @@ export const HERO = {
   greeting: "Hi, I'm",
   // Rotate through multiple taglines with a typing effect (configure in design.ts)
   taglines: [
-    'Software Engineer',
-    'Student at UCLA',
-    'Builder of Things',
+    'Aspiring Software Engineer',
+    'CS Student @ UCLA',
+    'AI/ML + Full-Stack Builder',
   ] as string[],
-  bio: "I'm a software engineer who builds things for the web, from clean UIs to scalable backends. I care about craft, speed, and shipping work that lasts.",
+  bio: "I'm a CS freshman at UCLA who builds with Python, C++, and LLMs. I care about craft, speed, and shipping things that make a real impact.",
   // Set to '/photo.jpg' to show your photo (place file at public/photo.jpg).
   // undefined shows your initials. To hide the frame entirely, set showPhoto: false in design.ts.
   photo: undefined as string | undefined,
@@ -98,16 +98,14 @@ export const EDUCATION: EducationEntry[] = [
   {
     school: 'University of California, Los Angeles',
     degree: 'B.S. Computer Science',
-    minor: 'Statistics',
-    gpa: '3.82',
-    graduation: 'June 2026',
+    minor: '',
+    gpa: '',
+    graduation: 'June 2030',
     courses: [
-      'Data Structures and Algorithms',
-      'Operating Systems',
-      'Computer Networks',
-      'Machine Learning',
-      'Probability and Statistics',
-      'Software Engineering',
+      'Introduction to Object-Oriented Programming (CS 31)',
+      'Introduction to Computer Science (CS 1)',
+      'Calculus of Several Variables (MATH 32A)',
+      'Astrobiology (EPS SCI 3)',
     ],
   },
 ];
@@ -126,33 +124,43 @@ export interface ExperienceEntry {
 
 export const EXPERIENCE: ExperienceEntry[] = [
   {
-    company: 'Acme Corporation',
-    role: 'Software Engineer Intern',
-    location: 'San Francisco, CA',
-    start: 'Jun 2025',
-    end: 'Aug 2025',
+    company: 'Bruin Software Engineering Fellowship',
+    role: 'Fellow in LLM Inference Track',
+    location: 'Los Angeles, California',
+    start: 'Oct 2026',
+    end: 'Dec 2026',
     bullets: [
-      'Built a real-time dashboard in React and TypeScript, reducing incident response time by 40%.',
-      'Designed and deployed three REST API endpoints serving 50k requests per day.',
-      'Collaborated with the design team to ship a redesigned onboarding flow that improved conversion by 18%.',
+      "Member of the LLM Inference Track in the BSE Fellowship. More updates soon to come!"
     ],
-    tech: ['React', 'TypeScript', 'Python', 'PostgreSQL', 'AWS'],
+    tech: ['LLMs', 'Node.js', 'Homebrew', 'Git'],
   },
   {
-    company: 'UCLA Engineering',
-    role: 'Teaching Assistant, CS 33',
-    location: 'Los Angeles, CA',
-    start: 'Sep 2024',
-    end: 'Dec 2024',
+    company: 'NEXUS (CS/AI & Physics Society)',
+    role: 'Founder & President',
+    location: 'New Delhi, India',
+    start: 'Mar 2025',
+    end: 'Mar 2026',
     bullets: [
-      'Led weekly discussion sections for 40 students covering systems programming in C.',
-      'Held office hours to assist students with debugging and conceptual questions.',
-      'Wrote and graded three programming assignments and two midterms.',
+      "Founded the school's first CS/AI and Physics Society, growing it into a recognized school society within months.",
+      'Introduced 50+ students to Python, C++, LLMs, AI/ML, and classical mechanics through hands-on demos and workshops.',
+      'Organized a hackathon, 2 guest sessions, and 2 inter-school outreach initiatives.',
     ],
-    tech: ['C', 'x86 Assembly', 'Linux'],
+    tech: ['Python', 'C++', 'LLMs'],
+  },
+  {
+    company: 'Universe to Us',
+    role: 'Co-Founder & Head of Logistics',
+    location: 'New Delhi, India',
+    start: 'Oct 2024',
+    end: 'Jan 2026',
+    bullets: [
+      'Co-founded a science education nonprofit teaching physics and STEM to 200+ underprivileged students across India.',
+      'Managed logistics for 30+ volunteers and coordinated external collaborations and fundraising.',
+      'Automated internal workflows with Notion and Google Sheets; organized 2 science fairs and led over 50 interactive STEM sessions.',
+    ],
+    tech: ['Notion', 'Google Sheets'],
   },
 ];
-
 // ── 5. Contact blurb ──────────────────────────────────────────────────
 // Short paragraph shown above your contact links.
 export const CONTACT_BLURB = "I'm actively looking for internships and new grad roles. If you're working on something interesting or just want to chat, my inbox is always open.";
@@ -170,37 +178,28 @@ export interface ProjectEntry {
 
 export const PROJECTS: ProjectEntry[] = [
   {
-    name: 'StudySync',
-    description: 'A collaborative study-planning app that lets students share notes, schedule group sessions, and track progress in real time.',
-    tech: ['Next.js', 'TypeScript', 'Supabase', 'Tailwind CSS'],
-    github: `${GITHUB_URL}/studysync`,
-    live: 'https://studysync.app',
+    name: 'ToxiChecker',
+    description: 'A cheminformatics platform that predicts compound toxicity for early-stage drug discovery using Tox21 and PubChem data, Morgan fingerprints, and a Random Forest classifier. INSPIRE-MANAK Award winner.',
+    tech: ['Python', 'RDKit', 'scikit-learn', 'Machine Learning'],
+    github: `https://github.com/vihitshah/ToxiChecker`,
     featured: true,
   },
   {
-    name: 'BruinBot',
-    description: 'A Discord bot surfacing real-time UCLA dining menus, library room availability, and bus schedules for 2,000+ active users.',
-    tech: ['Node.js', 'Discord.js', 'REST APIs', 'Cron'],
-    github: `${GITHUB_URL}/bruinbot`,
+    name: 'Gmail MCP Server',
+    description: 'A Model Context Protocol server that connects Gmail to Claude Desktop over OAuth 2.0, with tools to read unread mail, search, and draft emails in natural language.',
+    tech: ['Python', 'FastMCP', 'OAuth 2.0', 'MCP'],
+    github: `https://github.com/vihitshah/Gmail-MCP`,
     featured: true,
   },
   {
-    name: 'PocketPortfolio',
-    description: 'A mobile-first stock portfolio tracker with custom alerts and a clean chart-based UI, built during a 24-hour hackathon.',
-    tech: ['React Native', 'Expo', 'Recharts', 'Firebase'],
-    github: `${GITHUB_URL}/pocketportfolio`,
-    live: 'https://pocketportfolio.dev',
-    featured: false,
-  },
-  {
-    name: 'AutoGrade',
-    description: 'A CLI grading tool that runs student Python submissions against test suites in isolated Docker containers and produces structured reports.',
-    tech: ['Python', 'Docker', 'Bash', 'SQLite'],
-    github: `${GITHUB_URL}/autograde`,
+    name: 'PhotosyntheSound',
+    description: 'A bioelectricity system that captures plant electrical signals with Arduino and piezoelectric sensors and turns them into music. National finalist, presented to the Minister of Education.',
+    tech: ['Arduino', 'Piezoelectric Sensors', 'Signal Processing'],
+    github: `https://github.com/vihitshah/PhotosyntheSound`,
     featured: false,
   },
 ];
-
+ 
 // ── Social links ──────────────────────────────────────────────────────
 export const SOCIAL_LINKS = [
   { label: 'GitHub', href: GITHUB_URL },
