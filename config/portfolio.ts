@@ -163,7 +163,7 @@ export const EXPERIENCE: ExperienceEntry[] = [
 ];
 // ── 5. Contact blurb ──────────────────────────────────────────────────
 // Short paragraph shown above your contact links.
-export const CONTACT_BLURB = "I'm actively looking for internships and new grad roles. If you're working on something interesting or just want to chat, my inbox is always open.";
+export const CONTACT_BLURB = "I'm actively looking for internships. If you're working on something interesting or just want to chat, my inbox is always open.";
 
 // ── 6. Projects ───────────────────────────────────────────────────────
 // `featured: true` highlights the card with an accent-colored border.
